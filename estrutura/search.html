@@ -1,0 +1,37 @@
+<!---------
+<input type="search" name="q" id="" ut="">
+
+se recebe q=searchterm no backend
+
+- Para campo de busca
+- Visualmente é igual ao campo do tipo 'text' mas poderá ser um pouco diferente dependendo do useragent
+
+# Atributos
+    - list/ <datalist>
+        usado com javascript para sugerir buscas
+    - aria-label - 
+        acessibilidade sem aparecer na tela
+    - pattern
+        limita os termos do campo de pesquisa
+
+
+    ---------------->
+    <datalist id="searchterms">
+        <option>Win</option>
+        <option>Lunix</option>
+        <option>Mac</option>
+    </datalist>
+    <form action "">
+        
+        <input type="search" name="q" list="searchterms"
+        placeholder="Digite sua busca" size="29" area-label="Campo de pesquisa: Digite seu termo de busca">
+        <button>Pesquisar</button>
+        </form>
+        <br><br><br><br>
+
+        <form action "">
+        <label for="">Pesquisar pelo id</label>
+            <input type="search" name="id" list="searchterms"
+            size="6" area-label="Campo de pesquisa: Digite seu termo de busca" pattern="[0-9]{2}" title="Digite o número do id: 99">
+            <button>Pesquisar</button>
+            </form>

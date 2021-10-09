@@ -1,0 +1,133 @@
+<!---------
+        ## ESTRUTURA BASE ##
+
+            Seções comuns em docs HTML:
+
+            - Cabeçalho <header>
+            - Navegação <nav>
+            - Conteúdo principal <main>
+            - Barra lateral <aside>
+            - Rodapé <footer>
+    ---------------->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <!---------
+## MAIN ##
+- serve como conteúdo único da página utilizado somente uma vez por página e colocada direto no body.
+- possui somente atributos globais
+- foco central da página/ conteúdo principal da aplicação
+- não fica com menu dentro~
+- e sempre é na sequencia do body!!
+--->
+       <main>
+        <h1>Receitas</h1>
+        <p>Essa é uma página de receitas</p>
+
+        <article>
+            <h2>Receita de torta de maçã</h2>
+             <p>Essa é uma receita de torta de maçã</p>
+         </article>
+<!---------
+## Article ##
+Vai criar blocos de conteúdos que estejam relacionados, como os acima e abaixo
+- Ex: receitas relacionadas e podem ser repetidos em todo o documento.
+-->
+         <article>
+             <h2>Receita de torta de limão</h2>
+              <p>Essa é uma receita de torta de limão</p>
+          </article>
+    </main>
+<!---------
+## HEADER ##
+- Usado no ínicio da página, é visto como global:
+- Pode ser usado em outros elementos semânticos: article, section
+- não posso colocar header dentro de header ou footer
+- Múltiplos headers, um global, um de uma <section> outro de outra <section>...
+- Não possui atributos específicos dele somente atributos globais de todas as tags
+    ---------------->
+       <header>
+           logomarca
+</header>
+<!---------
+## NAV ##
+- serve como seção da nossa página que irá apontar para outras páginas
+- possui somente atributos globais
+- geralmente dentro do header
+- não necessáriamente todos o links devem estar dentro dela, somente os mais importantes
+- Navegação mais especial do site!!!
+--->
+           <nav class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contato</li>
+            </ul>
+        </nav>
+       </header>
+<hr>
+<!---------
+## ASIDE ##
+-PARTE LATERAL.
+- Conteúdos levemente relacionados com o conteúdo principal: glossários, links, extras, fotografias, bibliografias do autor, informações de perfil, e etc..
+- Fácil de entender, porém, fácil de confundir. Evite atribuir ao lado da página.
+- Apenas atributos globais.
+-->
+       <aside>
+           <h3>Links relacionados:</h3>
+           <li><a href="http://"></a></li>
+           <li><a href="http://"></a></li>
+           <li><a href="http://"></a></li>
+       </aside>
+       <!--
+    ## SECTION ##
+    <section>
+        Apenas atributos globais
+        Quando mais de um section melhor usar article
+        Pode ser usado dentro do article tbm no meio da página
+-->
+       <section>
+           <h2>Contato</h2>
+           <p>Fale conosco</p>>
+       </section>
+<!--PUBLICIDADE RELACIONADA-->
+<aside>
+    <strong>Oferecimentos: OFERÊ CIMENTOS</strong>
+</aside>
+<hr>
+<!--
+    ## FOOTER ##
+    <footer>
+        Atributos globais
+        Informações do autor, copyright, contato, sitemap, voltar ao topo...
+-->
+       <footer><em>Copyright: Gregory Vieira - 2021<em></footer>
+    </body>
+    </html>
+
+<!--
+    ## Elementos genéricos não semânticos ##
+        Quando já utilizamos todos elementos ou não sabemos qual outro utilizar:
+        
+        Para blocos: <div>
+        Para texto: <span>
+
+    <span> é usado quando não se acha um elemento de texto semântico
+        ar um destaque no texto, mas não queira usar a tag strong
+        <h1>Título <span class="destaque">destacado</span></h1>
+
+
+    <div> quando se acha bloco semântico
+        <div class="cart">
+            <h2>Carrinho de compras</h2>
+        </div>
+
+        usar em ambas atributos globais como id e class para entregar maior significado
+        -->
